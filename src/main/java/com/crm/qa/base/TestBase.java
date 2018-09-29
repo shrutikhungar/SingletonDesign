@@ -56,10 +56,13 @@ public class TestBase
 	
 	public void driverQuit() {
 		driver.quit();
+		//setting the driver variable to null again
+		driver=null;
 	}
 	
 	public void driverClose() {
 		driver.close();
+		driver=null;
 	}
 	
 	
